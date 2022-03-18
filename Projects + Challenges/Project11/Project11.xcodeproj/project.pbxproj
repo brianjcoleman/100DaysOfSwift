@@ -14,6 +14,7 @@
 		0F9CB4C027DF7B08004F1480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9CB4BE27DF7B08004F1480 /* Main.storyboard */; };
 		0F9CB4C227DF7B08004F1480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F9CB4C127DF7B08004F1480 /* Assets.xcassets */; };
 		0F9CB4C527DF7B08004F1480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F9CB4C327DF7B08004F1480 /* LaunchScreen.storyboard */; };
+		0FCD110627E4C1E90080405D /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0FCD110527E4C1E90080405D /* FireParticles.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0F9CB4BF27DF7B08004F1480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F9CB4C127DF7B08004F1480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F9CB4C427DF7B08004F1480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FCD110527E4C1E90080405D /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = FireParticles.sks; path = Assets.xcassets/FireParticles.dataset/FireParticles.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0F9CB4BE27DF7B08004F1480 /* Main.storyboard */,
 				0F9CB4C127DF7B08004F1480 /* Assets.xcassets */,
 				0F9CB4C327DF7B08004F1480 /* LaunchScreen.storyboard */,
+				0FCD110527E4C1E90080405D /* FireParticles.sks */,
 			);
 			path = Project11;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				0F9CB4C027DF7B08004F1480 /* Main.storyboard in Resources */,
 				0F9CB4B727DF7B08004F1480 /* GameScene.sks in Resources */,
+				0FCD110627E4C1E90080405D /* FireParticles.sks in Resources */,
 				0F9CB4C227DF7B08004F1480 /* Assets.xcassets in Resources */,
 				0F9CB4C527DF7B08004F1480 /* LaunchScreen.storyboard in Resources */,
 			);
