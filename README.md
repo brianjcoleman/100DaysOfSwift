@@ -7,7 +7,7 @@ https://www.hackingwithswift.com/100
 
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
-Lectures           |  49 / 100 | 49%
+Lectures           |  50 / 100 | 50%
 Projects + Challenges |  12 / 30 | 40.0%
 Milestone Projects |  4 / 10 | 40%
 Final Exam         |  0 / 1  | 0%
