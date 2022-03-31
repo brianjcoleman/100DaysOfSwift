@@ -15,6 +15,8 @@
 		0FF7428627F493A800336D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7428527F493A800336D06 /* Assets.xcassets */; };
 		0FF7428927F493A800336D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7428727F493A800336D06 /* LaunchScreen.storyboard */; };
 		0FF7429427F4966300336D06 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7429327F4966300336D06 /* WhackSlot.swift */; };
+		0FF7429827F5EDA800336D06 /* mud.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7429727F5EDA800336D06 /* mud.sks */; };
+		0FF7429E27F5EF2100336D06 /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7429D27F5EF2100336D06 /* smoke.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		0FF7429127F494C100336D06 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = whack.caf; path = "../../../../../Temp/HackingWithSwift-main/Classic/project14-files/Content/whack.caf"; sourceTree = "<group>"; };
 		0FF7429227F494C100336D06 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = whackBad.caf; path = "../../../../../Temp/HackingWithSwift-main/Classic/project14-files/Content/whackBad.caf"; sourceTree = "<group>"; };
 		0FF7429327F4966300336D06 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		0FF7429727F5EDA800336D06 /* mud.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = mud.sks; sourceTree = "<group>"; };
+		0FF7429D27F5EF2100336D06 /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				0FF7428727F493A800336D06 /* LaunchScreen.storyboard */,
 				0FF7429127F494C100336D06 /* whack.caf */,
 				0FF7429227F494C100336D06 /* whackBad.caf */,
+				0FF7429727F5EDA800336D06 /* mud.sks */,
+				0FF7429D27F5EF2100336D06 /* smoke.sks */,
 			);
 			path = Project14;
 			sourceTree = "<group>";
@@ -133,8 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF7429827F5EDA800336D06 /* mud.sks in Resources */,
 				0FF7428427F493A700336D06 /* Main.storyboard in Resources */,
 				0FF7427B27F493A700336D06 /* GameScene.sks in Resources */,
+				0FF7429E27F5EF2100336D06 /* smoke.sks in Resources */,
 				0FF7428627F493A800336D06 /* Assets.xcassets in Resources */,
 				0FF7428927F493A800336D06 /* LaunchScreen.storyboard in Resources */,
 			);
