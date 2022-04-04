@@ -70,6 +70,12 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
             present(ac, animated: true)
         }
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: []) {
+            sender.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        } completion: { finished in
+            sender.transform = .identity
+        }
     }
     
     @objc func showScore() {
