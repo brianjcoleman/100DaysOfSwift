@@ -1,0 +1,43 @@
+{
+    "results":[
+        {
+            "country":"Canada",
+            "capital":"Ottawa",
+            "languages":[
+                {
+                    "official":"English",
+                    "second":"French"
+                }
+            ],
+            "area (sq mi)":3855100,
+            "population":38526760,
+            "currency":"Canadian Dollar"
+        },
+        {
+            "country":"United States",
+            "capital":"Washington D.C.",
+            "languages":[
+                {
+                    "official":"English",
+                    "second":"Spanish"
+                }
+            ],
+            "area (sq mi)":3796742,
+            "population":327167434,
+            "currency":"United States Dollar"
+        },
+        {
+            "country":"France",
+            "capital":"Paris",
+            "languages":[
+                {
+                    "official":"French",
+                    "second":"English"
+                }
+            ],
+            "area (sq mi)":247368,
+            "population":6698000,
+            "currency":"Euro"
+        }
+    ]
+}
