@@ -21,6 +21,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let washington = Capital(title: "Washinton DC", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himeself.")
         
         mapView.addAnnotations([london, oslo, paris, rome, washington])
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(selectMapType))
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -28,11 +30,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         let identifier = "Capital"
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
         
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
+            annotationView?.pinTintColor = .yellow
             let btn = UIButton(type: .detailDisclosure)
             annotationView?.rightCalloutAccessoryView = btn
         } else {
@@ -45,12 +48,31 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let capital = view.annotation as? Capital else { return }
         
-        let placeName = capital.title
-        let placeInfo = capital.info
-        
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Ok", style: .default))
+        let vc = WebViewController()
+        vc.countryName = capital.title
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func selectMapType() {
+        let ac = UIAlertController(title: "Select Map Type", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Standard", style: .default, handler: {_ in
+            self.mapView.mapType = .standard
+        }))
+        ac.addAction(UIAlertAction(title: "Muted Standard", style: .default, handler: {_ in
+            self.mapView.mapType = .mutedStandard
+        }))
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default, handler: {_ in
+            self.mapView.mapType = .satellite
+        }))
+        ac.addAction(UIAlertAction(title: "Satellite Flyover", style: .default, handler: {_ in
+            self.mapView.mapType = .satelliteFlyover
+        }))
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default, handler: {_ in
+            self.mapView.mapType = .hybrid
+        }))
+        ac.addAction(UIAlertAction(title: "Hybrid Flyover", style: .default, handler: {_ in
+            self.mapView.mapType = .hybridFlyover
+        }))
         present(ac, animated: true)
     }
 }
-
