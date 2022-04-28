@@ -19,6 +19,8 @@
 		0FC762B32816DD210086EE05 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC762B12816DD210086EE05 /* MainInterface.storyboard */; };
 		0FC762B72816DD210086EE05 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0FC762A82816DD210086EE05 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0FC762BD2816DFB90086EE05 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FC762BC2816DFB90086EE05 /* Action.js */; };
+		0FC762BF281AD1E50086EE05 /* UserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC762BE281AD1E50086EE05 /* UserScript.swift */; };
+		0FC762C1281AD2420086EE05 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC762C0281AD2420086EE05 /* LoadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0FC762B22816DD210086EE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0FC762B42816DD210086EE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC762BC2816DFB90086EE05 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		0FC762BE281AD1E50086EE05 /* UserScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScript.swift; sourceTree = "<group>"; };
+		0FC762C0281AD2420086EE05 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				0FC762AD2816DD210086EE05 /* Media.xcassets */,
+				0FC762BE281AD1E50086EE05 /* UserScript.swift */,
 				0FC762AF2816DD210086EE05 /* ActionViewController.swift */,
+				0FC762C0281AD2420086EE05 /* LoadViewController.swift */,
 				0FC762B12816DD210086EE05 /* MainInterface.storyboard */,
 				0FC762B42816DD210086EE05 /* Info.plist */,
 				0FC762BC2816DFB90086EE05 /* Action.js */,
@@ -249,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC762C1281AD2420086EE05 /* LoadViewController.swift in Sources */,
 				0FC762B02816DD210086EE05 /* ActionViewController.swift in Sources */,
+				0FC762BF281AD1E50086EE05 /* UserScript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
