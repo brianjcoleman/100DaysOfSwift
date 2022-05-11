@@ -22,16 +22,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gU-9D-iec">
+                                <rect key="frame" x="181.5" y="489" width="51" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-8z-KmQ">
+                                <rect key="frame" x="79" y="140" width="256" height="256"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="D6i-Ez-d3u"/>
+                                    <constraint firstAttribute="height" constant="256" id="Rib-am-Tfv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Elh-lg-4gL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2iM-Y0-CkK"/>
+                            <constraint firstItem="6gU-9D-iec" firstAttribute="top" secondItem="Elh-lg-4gL" secondAttribute="bottom" constant="12" id="3Yc-yU-hzy"/>
+                            <constraint firstItem="6gU-9D-iec" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KwJ-TB-g4s"/>
+                            <constraint firstItem="Iif-8z-KmQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cpJ-j0-fG2"/>
+                            <constraint firstItem="Iif-8z-KmQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="wks-SQ-vHT"/>
                             <constraint firstItem="Elh-lg-4gL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yyf-Yd-fM5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="circleView" destination="Iif-8z-KmQ" id="fqf-Pu-p6g"/>
                         <outlet property="distanceReading" destination="Elh-lg-4gL" id="iWa-dJ-AOp"/>
+                        <outlet property="nameLabel" destination="6gU-9D-iec" id="hO7-6v-ii3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,6 +62,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
