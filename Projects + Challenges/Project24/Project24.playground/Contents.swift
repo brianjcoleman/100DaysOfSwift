@@ -88,3 +88,32 @@ attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 32), range
 attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 40), range: NSRange(location: 15, length: 6))
 
 
+extension String {
+    func withPrefix(_ prefix: String) -> String {
+        guard !self.hasPrefix(prefix) else { return self }
+        return prefix + self
+    }
+}
+
+assert("test".withPrefix("te") == "test")
+assert("pet".withPrefix("car") == "carpet")
+
+
+extension String {
+    var isNumeric: Bool {
+        return Double(self) != nil
+    }
+}
+
+assert("test".isNumeric == false)
+assert("123".isNumeric == true)
+assert("456.7".isNumeric == true)
+
+
+extension String {
+    var lines: [Substring] {
+        return self.split(separator: "\n")
+    }
+}
+
+assert("this\nis\na\ntest".lines == ["this", "is", "a", "test"])
