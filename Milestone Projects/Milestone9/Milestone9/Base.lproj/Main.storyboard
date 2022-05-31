@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qq0-bN-V2U">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7cW-9v-Mpp">
+            <objects>
+                <viewController id="qq0-bN-V2U" customClass="ViewController" customModule="Milestone_Projects25_27" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HHs-hz-Wux">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-vF-Co4">
+                                <rect key="frame" x="10" y="98" width="394" height="714"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW3-L8-FqL">
+                                <rect key="frame" x="159" y="831" width="96" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Set Top Text"/>
+                                <connections>
+                                    <action selector="topCaptionAction:" destination="qq0-bN-V2U" eventType="touchUpInside" id="3pC-G1-0Pc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-o7-J6n">
+                                <rect key="frame" x="294" y="822" width="110" height="30"/>
+                                <state key="normal" title="Set Bottom Text"/>
+                                <connections>
+                                    <action selector="bottomCaptionAction:" destination="qq0-bN-V2U" eventType="touchUpInside" id="Nt8-vT-ZVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBI-e8-fBP">
+                                <rect key="frame" x="10" y="822" width="98" height="30"/>
+                                <state key="normal" title="Import Picture"/>
+                                <connections>
+                                    <action selector="importAction:" destination="qq0-bN-V2U" eventType="touchUpInside" id="ozc-aM-XE9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5KI-tH-QF1"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5KI-tH-QF1" firstAttribute="trailing" secondItem="KgV-vF-Co4" secondAttribute="trailing" constant="10" id="Bey-Ss-0vX"/>
+                            <constraint firstItem="YhK-o7-J6n" firstAttribute="centerY" secondItem="LW3-L8-FqL" secondAttribute="centerY" id="LfL-d5-ln3"/>
+                            <constraint firstItem="LW3-L8-FqL" firstAttribute="centerX" secondItem="5KI-tH-QF1" secondAttribute="centerX" id="W8v-dB-ANm"/>
+                            <constraint firstItem="5KI-tH-QF1" firstAttribute="bottom" secondItem="EBI-e8-fBP" secondAttribute="bottom" constant="10" id="XcS-pQ-eby"/>
+                            <constraint firstItem="EBI-e8-fBP" firstAttribute="leading" secondItem="KgV-vF-Co4" secondAttribute="leading" id="Zo9-UF-eQm"/>
+                            <constraint firstItem="LW3-L8-FqL" firstAttribute="centerY" secondItem="EBI-e8-fBP" secondAttribute="centerY" id="fx6-Yd-Ufx"/>
+                            <constraint firstItem="EBI-e8-fBP" firstAttribute="top" secondItem="KgV-vF-Co4" secondAttribute="bottom" constant="10" id="gIk-Gb-eZf"/>
+                            <constraint firstItem="KgV-vF-Co4" firstAttribute="top" secondItem="5KI-tH-QF1" secondAttribute="top" constant="10" id="jsJ-Ri-naQ"/>
+                            <constraint firstItem="KgV-vF-Co4" firstAttribute="leading" secondItem="5KI-tH-QF1" secondAttribute="leading" constant="10" id="lKd-ad-v6K"/>
+                            <constraint firstItem="YhK-o7-J6n" firstAttribute="trailing" secondItem="KgV-vF-Co4" secondAttribute="trailing" id="s6t-Kg-BYY"/>
+                            <constraint firstItem="YhK-o7-J6n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LW3-L8-FqL" secondAttribute="trailing" id="uYR-Wx-MBl"/>
+                            <constraint firstItem="LW3-L8-FqL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EBI-e8-fBP" secondAttribute="trailing" id="z0I-nC-rmq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gf4-sd-mBo"/>
+                    <connections>
+                        <outlet property="bottomCaptionButton" destination="YhK-o7-J6n" id="aoj-l9-xT0"/>
+                        <outlet property="imageView" destination="KgV-vF-Co4" id="Iun-Ci-pN9"/>
+                        <outlet property="topCaptionButton" destination="LW3-L8-FqL" id="qVD-oI-DmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gj-yX-kRE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NEM-8y-FEv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wHN-5o-WG8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CjE-T7-bUh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qq0-bN-V2U" kind="relationship" relationship="rootViewController" id="Z5G-is-OTj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xc2-u0-nQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="139"/>
+        </scene>
+    </scenes>
+</document>
