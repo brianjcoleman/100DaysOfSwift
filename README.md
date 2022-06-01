@@ -7,7 +7,7 @@ https://www.hackingwithswift.com/100
 
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
-Days           |  93 / 100 | 93%
+Days           |  94 / 100 | 94%
 Projects + Challenges |  28 / 30 | 93%
 Milestone Projects |  9 / 10 | 90%
 Final Exam         |  0 / 1  | 0%
