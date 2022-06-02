@@ -17,6 +17,7 @@
 		0F2F6D922848075400FCFAA8 /* hitBuilding.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F6D902848075400FCFAA8 /* hitBuilding.sks */; };
 		0F2F6D932848075400FCFAA8 /* hitPlayer.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F6D912848075400FCFAA8 /* hitPlayer.sks */; };
 		0F2F6D952848079600FCFAA8 /* BuildingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F6D942848079600FCFAA8 /* BuildingNode.swift */; };
+		0F2F6D972848F6DE00FCFAA8 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F6D962848F6DE00FCFAA8 /* Wind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		0F2F6D902848075400FCFAA8 /* hitBuilding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitBuilding.sks; sourceTree = "<group>"; };
 		0F2F6D912848075400FCFAA8 /* hitPlayer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = hitPlayer.sks; sourceTree = "<group>"; };
 		0F2F6D942848079600FCFAA8 /* BuildingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingNode.swift; sourceTree = "<group>"; };
+		0F2F6D962848F6DE00FCFAA8 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				0F2F6D79284806EF00FCFAA8 /* AppDelegate.swift */,
 				0F2F6D7B284806EF00FCFAA8 /* GameScene.sks */,
 				0F2F6D7F284806EF00FCFAA8 /* GameScene.swift */,
-				0F2F6D942848079600FCFAA8 /* BuildingNode.swift */,
 				0F2F6D81284806EF00FCFAA8 /* GameViewController.swift */,
+				0F2F6D942848079600FCFAA8 /* BuildingNode.swift */,
+				0F2F6D962848F6DE00FCFAA8 /* Wind.swift */,
 				0F2F6D83284806EF00FCFAA8 /* Main.storyboard */,
 				0F2F6D86284806EF00FCFAA8 /* Assets.xcassets */,
 				0F2F6D88284806EF00FCFAA8 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F2F6D80284806EF00FCFAA8 /* GameScene.swift in Sources */,
+				0F2F6D972848F6DE00FCFAA8 /* Wind.swift in Sources */,
 				0F2F6D952848079600FCFAA8 /* BuildingNode.swift in Sources */,
 				0F2F6D82284806EF00FCFAA8 /* GameViewController.swift in Sources */,
 				0F2F6D7A284806EF00FCFAA8 /* AppDelegate.swift in Sources */,
