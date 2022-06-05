@@ -7,8 +7,10 @@ https://www.hackingwithswift.com/100
 
 Type               | Number  | Completion
 :---               |  :---:  |   :---:
-Days           |  99 / 100 | 99%
+Days           |  100 / 100 | 100%
 Projects + Challenges |  30 / 30 | 100%
 Milestone Projects |  10 / 10 | 100%
-Final Exam         |  0 / 1  | 0%
+Final Exam  |  87 / 100  | 87% 
+
+![Certificate of Merit](https://github.com/brianjcoleman/100DaysOfSwift/certificate.jpg?raw=true)
 
