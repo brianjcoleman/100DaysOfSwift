@@ -12,5 +12,5 @@ Projects + Challenges |  30 / 30 | 100%
 Milestone Projects |  10 / 10 | 100%
 Final Exam  |  87 / 100  | 87% 
 
-![Certificate of Merit](https://github.com/brianjcoleman/100DaysOfSwift/certificate.jpg?raw=true)
+![Certificate of Merit](https://github.com/brianjcoleman/100DaysOfSwift/blob/main/certificate.jpg?raw=true)
 
